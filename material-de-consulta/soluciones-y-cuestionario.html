@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones y Cuestionario - SIFECHA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed text-gray-800">
+
+    <div class="container mx-auto max-w-4xl mt-10 p-6 bg-white rounded-lg shadow-md border border-gray-200">
+        
+        <h1 class="text-3xl font-bold text-gray-900 border-b-2 border-green-500 pb-2 mb-6">Soluciones a los Ejercicios de Práctica</h1>
+
+        <h3 class="text-xl font-medium text-gray-700 mb-2">1. Cálculo de Edad y Antigüedad</h3>
+        <p class="mb-4">Estas son las fórmulas para la columna "Antigüedad (Años)".</p>
+        <div class="overflow-x-auto mb-6">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-green-600 text-white">
+                        <th class="py-2 px-4 border border-green-700 text-left">Nombre</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Fecha de Contratación</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Antigüedad (Años)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Ana Pérez</td>
+                        <td class="py-2 px-4 border border-gray-300">15/03/2010</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B2, HOY(), "Y")</code></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Juan Gómez</td>
+                        <td class="py-2 px-4 border border-gray-300">25/08/2018</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B3, HOY(), "Y")</code></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Sofía Reyes</td>
+                        <td class="py-2 px-4 border border-gray-300">01/01/2022</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B4, HOY(), "Y")</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="text-xl font-medium text-gray-700 mb-2">2. Días para el Próximo Cumpleaños</h3>
+        <div class="overflow-x-auto mb-6">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-green-600 text-white">
+                        <th class="py-2 px-4 border border-green-700 text-left">Nombre</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Fecha de Nacimiento</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Días para el Cumpleaños</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Luis</td>
+                        <td class="py-2 px-4 border border-gray-300">10/11/1995</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B2, HOY(), "YD")</code></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Clara</td>
+                        <td class="py-2 px-4 border border-gray-300">05/02/1988</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B3, HOY(), "YD")</code></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Daniel</td>
+                        <td class="py-2 px-4 border border-gray-300">20/09/2000</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B4, HOY(), "YD")</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="text-xl font-medium text-gray-700 mb-2">3. Duración de una Tarea de Producción</h3>
+        <div class="overflow-x-auto mb-6">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-green-600 text-white">
+                        <th class="py-2 px-4 border border-green-700 text-left">Tarea</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Inicio del Ciclo</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Fin del Ciclo</th>
+                        <th class="py-2 px-4 border border-green-700 text-left">Duración (días del mes)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Silla Ergonómica</td>
+                        <td class="py-2 px-4 border border-gray-300">12/03/2023</td>
+                        <td class="py-2 px-4 border border-gray-300">25/03/2023</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B2, C2, "MD")</code></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Escritorio Clásico</td>
+                        <td class="py-2 px-4 border border-gray-300">28/08/2024</td>
+                        <td class="py-2 px-4 border border-gray-300">10/09/2024</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B3, C3, "MD")</code></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-green-50">
+                        <td class="py-2 px-4 border border-gray-300">Mesa de Centro</td>
+                        <td class="py-2 px-4 border border-gray-300">01/05/2025</td>
+                        <td class="py-2 px-4 border border-gray-300">03/05/2025</td>
+                        <td class="py-2 px-4 border border-gray-300"><code>=SIFECHA(B4, C4, "MD")</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Práctica con SIFECHA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed text-gray-800">
+
+    <div class="container mx-auto max-w-4xl mt-10 p-6 bg-white rounded-lg shadow-md border border-gray-200">
+        
+        <h1 class="text-3xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-6">Ejercicios de Práctica con la Función SIFECHA</h1>
+         <p class="mb-4 text-2xl text-blue-600">*Todos los ejercicios deben tener minimo 10 registros</p>
+        <h2 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-1 mb-4 mt-10">1. Cálculo de Edad y Antigüedad (Unidad "Y") 🧑‍💼</h2>
+        <p class="mb-4">Imagina que eres el jefe de Recursos Humanos de una empresa y necesitas calcular la antigüedad de varios empleados para otorgar bonos de lealtad.</p>
+        <div class="overflow-x-auto mb-6">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="py-2 px-4 border border-blue-700 text-left">Nombre</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Fecha de Contratación</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Antigüedad (Años)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Ana Pérez</td>
+                        <td class="py-2 px-4 border border-gray-300">15/03/2010</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Juan Gómez</td>
+                        <td class="py-2 px-4 border border-gray-300">25/08/2018</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Sofía Reyes</td>
+                        <td class="py-2 px-4 border border-gray-300">01/01/2022</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mb-8"><strong>Tarea:</strong> En la columna "Antigüedad (Años)", usa la función <code>SIFECHA</code> para calcular el número de <strong>años completos</strong> que cada empleado lleva en la empresa. La fecha de fin debe ser la fecha actual (usa la fórmula <code>HOY()</code>).</p>
+
+        <h2 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-1 mb-4">2. Días para el Próximo Cumpleaños (Unidad "YD") 🎂</h2>
+        <p class="mb-4">Eres el encargado de organizar los cumpleaños en tu oficina y quieres saber exactamente cuántos días le faltan a cada persona para celebrar su día especial.</p>
+        <div class="overflow-x-auto mb-6">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="py-2 px-4 border border-blue-700 text-left">Nombre</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Fecha de Nacimiento</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Días para el Cumpleaños</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Luis</td>
+                        <td class="py-2 px-4 border border-gray-300">10/11/1995</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Clara</td>
+                        <td class="py-2 px-4 border border-gray-300">05/02/1988</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Daniel</td>
+                        <td class="py-2 px-4 border border-gray-300">20/09/2000</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mb-8"><strong>Tarea:</strong> En la columna "Días para el Cumpleaños", usa la función <code>SIFECHA</code> para determinar cuántos <strong>días faltan</strong> para el cumpleaños de cada persona, sin contar los años.</p>
+
+        <h2 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-1 mb-4">3. Duración de una Tarea de Producción (Unidad "MD") 🗓️</h2>
+        <p class="mb-4">En una fábrica de muebles, se miden los ciclos de producción por la cantidad de días que un producto está en el taller. Un gerente te pide que calcules el tiempo de duración en días para algunas tareas.</p>
+        <div class="overflow-x-auto mb-6">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="py-2 px-4 border border-blue-700 text-left">Tarea</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Inicio del Ciclo</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Fin del Ciclo</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Duración (días del mes)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Silla Ergonómica</td>
+                        <td class="py-2 px-4 border border-gray-300">12/03/2023</td>
+                        <td class="py-2 px-4 border border-gray-300">25/03/2023</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Escritorio Clásico</td>
+                        <td class="py-2 px-4 border border-gray-300">28/08/2024</td>
+                        <td class="py-2 px-4 border border-gray-300">10/09/2024</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300">Mesa de Centro</td>
+                        <td class="py-2 px-4 border border-gray-300">01/05/2025</td>
+                        <td class="py-2 px-4 border border-gray-300">03/05/2025</td>
+                        <td class="py-2 px-4 border border-gray-300"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><strong>Tarea:</strong> En la columna "Duración (días del mes)", usa la función <code>SIFECHA</code> para calcular cuántos <strong>días</strong> han pasado entre la fecha de inicio y la de fin, <strong>excluyendo los meses y años completos</strong>.</p>
+
+    </div>
+
+</body>
+</html>

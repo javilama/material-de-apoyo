@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Función SIFECHA y Operador & en Excel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed text-gray-800">
+
+    <div class="container mx-auto max-w-4xl mt-10 p-6 bg-white rounded-lg shadow-md border border-gray-200">
+        
+        <h1 class="text-3xl font-bold text-gray-900 border-b-2 border-blue-500 pb-2 mb-6">Funciones Esenciales de Excel</h1>
+
+        <h2 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-1 mb-4">Función SIFECHA()</h2>
+        <p class="mb-4">La función <strong class="text-blue-600">SIFECHA</strong> en Excel se utiliza para calcular la diferencia exacta entre dos fechas. A pesar de su utilidad, es una función "oculta" que no aparece en la lista de fórmulas de Excel y debe escribirse manualmente.</p>
+
+        <h3 class="text-xl font-medium text-gray-700 mb-2">Sintaxis</h3>
+        <pre class="bg-gray-100 p-3 rounded-md overflow-x-auto text-sm"><code>=SIFECHA(Fecha_inicial, Fecha_final, Unidad)</code></pre>
+        <ul class="list-disc list-inside space-y-1 mb-4">
+            <li><strong><code>Fecha_inicial</code></strong>: La fecha de inicio del período.</li>
+            <li><strong><code>Fecha_final</code></strong>: La fecha de fin del período.</li>
+            <li><strong><code>Unidad</code></strong>: El tipo de resultado que deseas (años, meses, etc.), se debe escribir entre comillas dobles.</li>
+        </ul>
+
+        <h3 class="text-xl font-medium text-gray-700 mb-2">Unidades de Tiempo</h3>
+        <div class="overflow-x-auto">
+            <table class="min-w-full border-collapse">
+                <thead>
+                    <tr class="bg-blue-600 text-white">
+                        <th class="py-2 px-4 border border-blue-700 text-left">Unidad</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Descripción</th>
+                        <th class="py-2 px-4 border border-blue-700 text-left">Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-blue-50 odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300"><strong>"Y"</strong></td>
+                        <td class="py-2 px-4 border border-gray-300">Devuelve el número de <strong>años completos</strong> entre las dos fechas.</td>
+                        <td class="py-2 px-4 border border-gray-300">Útil para calcular la edad.</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300"><strong>"M"</strong></td>
+                        <td class="py-2 px-4 border border-gray-300">Devuelve el número de <strong>meses completos</strong>.</td>
+                        <td class="py-2 px-4 border border-gray-300">Mide la duración de un contrato en meses.</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300"><strong>"D"</strong></td>
+                        <td class="py-2 px-4 border border-gray-300">Devuelve el número de <strong>días completos</strong>.</td>
+                        <td class="py-2 px-4 border border-gray-300">Cuenta los días totales entre dos fechas.</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300"><strong>"YM"</strong></td>
+                        <td class="py-2 px-4 border border-gray-300">Devuelve los <strong>meses restantes</strong> después de contar los años completos.</td>
+                        <td class="py-2 px-4 border border-gray-300">Útil para saber cuántos meses han pasado desde tu último cumpleaños.</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300"><strong>"YD"</strong></td>
+                        <td class="py-2 px-4 border border-gray-300">Devuelve los <strong>días restantes</strong> después de contar los años completos.</td>
+                        <td class="py-2 px-4 border border-gray-300">Calcula los días que faltan para tu próximo cumpleaños.</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-blue-50">
+                        <td class="py-2 px-4 border border-gray-300"><strong>"MD"</strong></td>
+                        <td class="py-2 px-4 border border-gray-300">Devuelve los <strong>días restantes</strong> después de contar los meses completos.</td>
+                        <td class="py-2 px-4 border border-gray-300">Ideal para ver la diferencia de días en un mes específico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="my-6 border-gray-300">
+
+        <h2 class="text-2xl font-semibold text-gray-800 border-b-2 border-blue-400 pb-1 mb-4">Operador de Concatenación (&)</h2>
+        <p class="mb-4">El operador <strong class="text-blue-600"><code>&</code></strong> se usa para <strong>unir o combinar</strong> dos o más cadenas de texto. Funciona como una herramienta de pegado que une el resultado de una fórmula, el contenido de una celda o un texto fijo, creando una sola cadena.</p>
+
+        <h3 class="text-xl font-medium text-gray-700 mb-2">¿Cómo Funciona?</h3>
+        <p class="mb-4">El operador <code>&</code> es simple y directo. Toma los valores a su izquierda y derecha y los junta. Si unes números o fechas, Excel los convierte automáticamente a texto para que puedan unirse.</p>
+        
+        <h3 class="text-xl font-medium text-gray-700 mb-2">Ejemplos de Uso</h3>
+        <pre class="bg-gray-100 p-3 rounded-md overflow-x-auto text-sm mb-4"><code>=A1 & " " & B1</code></pre>
+        <p class="mb-4">Si la celda A1 contiene "Hola" y B1 contiene "Mundo", esta fórmula dará como resultado <strong>"Hola Mundo"</strong>.</p>
+
+        <pre class="bg-gray-100 p-3 rounded-md overflow-x-auto text-sm mb-4"><code>=SIFECHA(Fecha_nacimiento, HOY(), "Y") & " años"</code></pre>
+        <p>Esta fórmula combina la edad calculada con la función <code>SIFECHA</code> y el texto " años", mostrando un resultado como <strong>"35 años"</strong>.</p>
+    </div>
+
+</body>
+</html>
