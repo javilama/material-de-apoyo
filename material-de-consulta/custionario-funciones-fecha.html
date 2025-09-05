@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario sobre Funciones de Fecha en Excel</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 font-sans leading-relaxed text-gray-800">
 
     <div class="container mx-auto max-w-4xl mt-10 p-6 bg-white rounded-lg shadow-md border border-gray-200">
-        
-        <h1 class="text-3xl font-bold text-gray-900 border-b-2 border-green-500 pb-2 mb-6">Cuestionario Conceptual sobre Funciones de Fecha</h1>
-        <p class="text-2xl text-gray-600">Enviar las respuestas a: <code>jairoavilam@ingenieros.com</code>, solo nombre del estudiante y respuestas <br> Ejemplo: Nombre: Jairo Avila, Respuestas: 1.e, 2.j </p><br>
-        
+
+        <h1 class="text-3xl font-bold text-gray-900 border-b-2 border-green-500 pb-2 mb-6">Cuestionario Conceptual sobre
+            Funciones de Fecha:</h1>
+        <p class="text-2xl text-gray-600">Enviar las respuestas a: <code>jairoavilam@ingenieros.com</code>, solo nombre
+            del estudiante y respuestas <br> Ejemplo: Nombre: Jairo Avila, Respuestas: 1.e, 2.j </p><br>
+
         <ol class="list-decimal list-inside space-y-4 text-gray-700">
             <li>
-                <p><strong>¿Cuál es la función "oculta" que se usa para calcular la diferencia entre dos fechas?</strong></p>
+                <p><strong>¿Cuál es la función "oculta" que se usa para calcular la diferencia entre dos
+                        fechas?</strong></p>
                 <ul class="list-none ml-6 space-y-1">
                     <li>a) <code>FECHADIF</code></li>
                     <li>b) <code>DIFERENCIA.FECHA</code></li>
@@ -24,7 +29,8 @@
                 </ul>
             </li>
             <li>
-                <p><strong>Si deseas saber cuántos años completos han pasado entre el 10/01/2015 y hoy, ¿qué unidad de medida usarías en la función <code>SIFECHA</code>?</strong></p>
+                <p><strong>Si deseas saber cuántos años completos han pasado entre el 10/01/2015 y hoy, ¿qué unidad de
+                        medida usarías en la función <code>SIFECHA</code>?</strong></p>
                 <ul class="list-none ml-6 space-y-1">
                     <li>a) `"M"`</li>
                     <li>b) `"Y"`</li>
@@ -33,7 +39,8 @@
                 </ul>
             </li>
             <li>
-                <p><strong>¿Qué tipo de valor devuelven las funciones <code>AÑO</code>, <code>MES</code> y <code>DIA</code>?</strong></p>
+                <p><strong>¿Qué tipo de valor devuelven las funciones <code>AÑO</code>, <code>MES</code> y
+                        <code>DIA</code>?</strong></p>
                 <ul class="list-none ml-6 space-y-1">
                     <li>a) Un texto</li>
                     <li>b) Una fecha</li>
@@ -42,7 +49,9 @@
                 </ul>
             </li>
             <li>
-                <p><strong>Si la celda <code>A1</code> contiene "25/08/2020" y la celda <code>B1</code> contiene "Juan", ¿cuál sería el resultado de la fórmula <code>=TEXTO(A1, "dddd") & " es el cumpleaños de " & B1</code>?</strong></p>
+                <p><strong>Si la celda <code>A1</code> contiene "25/08/2020" y la celda <code>B1</code> contiene "Juan",
+                        ¿cuál sería el resultado de la fórmula
+                        <code>=TEXTO(A1, "dddd") & " es el cumpleaños de " & B1</code>?</strong></p>
                 <ul class="list-none ml-6 space-y-1">
                     <li>a) <code>25 de agosto es el cumpleaños de Juan</code></li>
                     <li>b) <code>martes es el cumpleaños de Juan</code></li>
@@ -51,7 +60,8 @@
                 </ul>
             </li>
             <li>
-                <p><strong>¿Por qué es importante usar la función <code>HOY()</code> en lugar de escribir la fecha actual manualmente en una fórmula de cálculo de edad o antigüedad?</strong></p>
+                <p><strong>¿Por qué es importante usar la función <code>HOY()</code> en lugar de escribir la fecha
+                        actual manualmente en una fórmula de cálculo de edad o antigüedad?</strong></p>
                 <ul class="list-none ml-6 space-y-1">
                     <li>a) <code>HOY()</code> es más fácil de escribir.</li>
                     <li>b) <code>HOY()</code> se actualiza automáticamente cada día.</li>
@@ -60,8 +70,37 @@
                 </ul>
             </li>
         </ol>
-
+       <div class="flex justify-center mt-10 p-4 bg-blue-50 border-l-4 border-r-4 border-blue-400">
+               <a id="openModalBtn" class="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+            Solución</a>
+        </div>
+        <div id="myModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex  items-center justify-center z-50">
+            <div class="flex flex-col bg-white p-8 rounded-lg shadow-xl max-w-sm w-full text-center gap-10">
+                <h2 class="text-3xl font-extrabold text-gray-800">Vale <br><span class="text-blue-300">Aquí tienes la
+                        solución al cuestionario, espero que lo hayas logrado 🙌</span> </h2>
+                <a href="/material-de-consulta/cuestionario-solucion.html"
+                    class="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+                    Ver solución </a>
+            </div>
+        </div>
     </div>
+    <script>
+        // Obtener los elementos del DOM
+        const modal = document.getElementById("myModal");
+        const btn = document.getElementById("openModalBtn");
 
+        // Cuando el usuario hace clic en el botón, muestra el modal
+        btn.onclick = function () {
+            modal.classList.remove('hidden');
+        }
+
+        // Cuando el usuario hace clic en el fondo gris, oculta el modal
+        modal.onclick = function (event) {
+            if (event.target === modal) {
+                modal.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
+
 </html>
